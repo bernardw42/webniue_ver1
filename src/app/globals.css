@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.custom-dots .slick-dots {
+  display: block !important;
+  position: relative !important;
+  bottom: 10px !important;
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+  color: #5569B2 !important; /* Set active dot color */
+  opacity: 1 !important; /* Ensure visibility of active dot */
+}
+
+.custom-dots .slick-dots li button:before {
+  color: #5569b285 !important; /* Set non-active dot color */
+  opacity: 0.5 !important; /* Make non-active dots slightly transparent */
+  transition: opacity 0.3s ease; /* Smooth transition between states */
+}
