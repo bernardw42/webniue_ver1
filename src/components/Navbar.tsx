@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 import { useTranslation, LinkWithLocale, LanguageSwitcher } from 'next-export-i18n';
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../../public/navbar/logo3.png'
+import Logo from '../../public/navbar/logo3.webp'
 import MobileMenu from '@/components/NavbarMobile'
-import globe from "@/../public/navbar/world.png"
+import globe from "@/../public/navbar/world.webp"
 
 export default function Header() {
   const { t } = useTranslation();
@@ -24,15 +24,15 @@ export default function Header() {
   }, [top])
 
   return (
-    <header className={`fixed w-full z-30 md:bg-opacity-100 transition duration-300 ease-in-out ${!top ? 'bg-[#5569B2] backdrop-blur-sm shadow-lg' : ''}`}>
+    <header className={`fixed w-full z-40 md:bg-opacity-100 transition duration-300 ease-in-out ${!top ? 'bg-[#5569B2] backdrop-blur-sm shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto px-6 py-1 max-lg:py-2 ">
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
           <div className="shrink-0 mr-4 z-30">
-            <Link href="/">
+            <LinkWithLocale href="/">
                 <Image src={Logo} alt='tes' className='w-[120px] max-md:w-[110px] drop-shadow-2xl'></Image>
-            </Link>
+            </LinkWithLocale>
           </div>
 
           {/* Desktop navigation */}
@@ -40,16 +40,19 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <LinkWithLocale href="/aboutus" className="font-medium text-[17px] text-white hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p1')}</LinkWithLocale>
+                <LinkWithLocale href="/aboutus" className="font-medium text-[17px] text-white hover:text-gray-600 lg:px-5 px-2 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p1')}</LinkWithLocale>
               </li>
               <li>
-                <LinkWithLocale href="/services" className="font-medium text-[17px] text-white hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p2')}</LinkWithLocale>
+                <LinkWithLocale href="/services" className="font-medium text-[17px] text-white hover:text-gray-600 lg:px-5 px-2 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p2')}</LinkWithLocale>
               </li>
               <li>
-                <LinkWithLocale href="/blog" className="font-medium text-[17px] text-white hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p3')}</LinkWithLocale>
+                <LinkWithLocale href="/blog" className="font-medium text-[17px] text-white hover:text-gray-600 lg:px-5 px-2 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p3')}</LinkWithLocale>
               </li>
               <li>
-                <LinkWithLocale href="/contactus" className="font-medium text-[17px] text-white hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p4')}</LinkWithLocale>
+                <LinkWithLocale href="/ourworks" className="font-medium text-[17px] text-white hover:text-gray-600 lg:px-5 px-2 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p5')}</LinkWithLocale>
+              </li>
+              <li>
+                <LinkWithLocale href="/contactus" className="font-medium text-[17px] text-white hover:text-gray-600 lg:px-5 px-2 py-3 flex items-center transition duration-150 ease-in-out drop-shadow-2xl">{t('NavBar.p4')}</LinkWithLocale>
               </li>
               <div className='flex flex-wrap items-center px-4 font-medium gap-x-1'>
                 <Image src={globe} alt='lang' className='w-[30px] drop-shadow-2xl' />

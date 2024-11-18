@@ -6,52 +6,57 @@
       "p1": "About Us",
       "p2": "Services",
       "p3": "Blog",
-      "p4": "Contact Us"
+      "p4": "Contact Us",
+      "p5": "Our Works"
     },
     "Footer": {
-      "p1": "About Us",
-      "p2": "Services",
-      "p3": "Blog",
-      "p4": "Contact Us",
-      "p5": "Adress",
-      "p6": "Work Hour",
-      "p7": "Monday - Friday, 09.00 - 21.00 WIB GMT +7"
+      "f1": "Let's Collaborate",
+      "f11": "LET’S WORK TOGETHER",
+      "f2": "Ready to Explore Your Digital Marketing Potential?",
+      "f3": "Connect with Us Today!",
+      "f4": "Name",
+      "f5": "Email Address",
+      "f6": "Phone Number",
+      "f7": "Subject",
+      "f8": "Message",
+      "f9": "Send Message",
+      "p" : "Brand Consulting, Identity Design, Packaging Design, Editorial Design, Market Research, & Social Media. We design all kinds."
     },
     "HomeHeader": {
-      "h1": "DIGITAL MARKETING AGENCY",
-      "h2": "With",
-      "h3": "Together with an experienced and professional team with years of experience in logistics and supply chain management (SCM), we offer the best logistics solutions with expertise and network throughout Indonesia."
+      "h1": "DIGITAL MARKETING AGENCY"
     },
     "HomeService": {
-      "h": "Our Service",
-      "p": "Welcome to Panca Budi Logistindo! Your ultimate logistical solution provider!"
+      "h": "WEBSITE DEVELOPMENT",
+      "p": "Enhance your website with the skills and experience of our expert UX/UI specialists and developers. Elevate your business into the digital landscape with a cutting-edge web solution.",
+      "h1": "WEBSITE MANAGEMENT",
+      "p1": "Let NIEU's web experts handle the hard work, allowing you to focus more on your leads, sales, and customers. We'll manage your site maintenance and development projects for you.",
+      "h2": "SOCIAL MEDIA MANAGEMENT",
+      "p2": "We expertly combine digital, creative, and advertising skills, with experiences and stories worth celebrating, elevate brands beyond simply 'better.'",
+      "p3": "LEARN MORE"
     },
     "HomeCard": {
-      "title1": "Trucking Services",
-      "desc1": "PBL handles the movement of goods and materials from one location to another",
-      "title2": "Eksport & Import",
-      "desc2": "PBL is responsible for handling customs procedures and ensure compliance with import/export regulations",
-      "title3": "Custom Clearance & Document Services",
-      "desc3": "The import-export and customs clearance services of PBL are integrated with our worldwide operational systems."
+      "p": "GROW TRAFFIC & INCREASE REVENUE",
+      "p1": "Appear On Front Page of Google!",
+      "p2": "We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords."
     },
     "HomeMap" :{
-      "h" : "We offer best logistic solutions to improve efficiency on custom production and distribution throughout Indonesia."
+      "h": "LOCAL SEARCH STRATEGY",
+      "p": "Maximize your presence on search engine results pages on a local scale",
+      "h1": "MAP SEARCH OPTIMIZATION",
+      "p1": "Google Maps Optimization is an important part for your local marketing strategy",
+      "h2": "LINK BUILDING & CONTENT",
+      "p2": "Link building is a tremendously important component of Search Engine Optimization",
+      "h3": "PAID SEARCH ADVERTISING",
+      "p3": "Paid listings on Google AdWords can help you reach new customers",
+      "h4": "CUSTOM WEBSITE DESIGN",
+      "p4": "Our team specializes in affordable web design and e-commerce"
     },
     "HomeMessage": {
-      "h": "Switch to Panca Budi Logistindo now!",
-      "p": "Panca Budi Logistindo is a logistic & supply chain management solution for businesses across various industries. Supported by technology that can monitor all shipments and product management in real time. Panca Budi Logistindo provides end-to-end services from warehouse management with instant capacity to distribution & delivery management.",
-      "h2" : "Get in touch with Panca Budi Logistindo",
-      "p1" : "Your Name",
-      "p2" : "Your Email",
-      "p3" : "Subject",
-      "p4" : "Your Message",
-      "p5" : "Send Message",
-      "p6" : "Full Name",
-      "p7" : "name@email.com",
-      "p8" : "Let us know how we can help you",
-      "p9" : "Leave a comment..."
-    },
-    "CredsClient": {
-      "h": "OUR CLIENTS"
+      "h": "SEARCH ENGINE & SOCIAL MEDIA OPTIMIZATION",
+      "p": "Full Service Digital Marketing Agency",
+      "h1" : "CONTENT STRATEGY",
+      "h2" : "SOCIAL MEDIA MARKETING",
+      "h3" : "ORGANIC LONG-TERM SEO",
+      "h4" : "ADVANCED ANALYTIC"
     }
   }

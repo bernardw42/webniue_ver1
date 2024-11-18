@@ -8,6 +8,9 @@ var blogEn = require("./blog/blog_en.json");
 var blogId = require("./blog/blog_id.json");
 var contactusEn = require("./contactus/contactus_en.json");
 var contactusId = require("./contactus/contactus_id.json");
+var ourworksEn = require("./ourworks/ourworks_en.json")
+var ourworksId = require("./ourworks/ourworks_id.json")
+
 
 const i18n = {
   translations: {
@@ -17,6 +20,7 @@ const i18n = {
       ...servicesEn,
       ...blogEn,
       ...contactusEn,
+      ...ourworksEn,
     },
     id: {
       ...homeId,
@@ -24,6 +28,7 @@ const i18n = {
       ...servicesId,
       ...blogId,
       ...contactusId,
+      ...ourworksId,
     }
   },
   defaultLang: "en",

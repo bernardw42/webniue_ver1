@@ -4,7 +4,8 @@ import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import Card from "./Card/Card"; // Import Card component
 import { posts } from "./Post"; // Import posts
-
+import Image from "next/image";
+import ball2 from "@/../public/aboutus/compress/ball2.webp";
 // Import slick styles globally
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; // Ensure both slick and slick-theme CSS are imported
@@ -48,7 +49,12 @@ export default function Carouse() {
   }, []);
 
   return (
-    <div className="w-full h-full flex justify-center items-center bg-white pt-[200px] pb-[150px] max-sm:pt-[150px] max-sm:pb-[180px]">
+    <div className="w-full h-full flex justify-center items-center bg-white pt-[200px] pb-[100px] max-sm:pt-[150px] relative overflow-hidden">
+      <Image
+        src={ball2}
+        alt="Ball Decoration 1"
+        className="absolute top-[360px] left-[-250px] w-[550px] h-auto max-md:left-[-100px] z-10 opacity-75 max-lg:hidden"
+      />
       <div className="max-w-7xl w-full h-full flex flex-col justify-center items-center overflow-hidden px-8 max-md:px-4 max-sm:px-2">
         <Slider
           ref={sliderRef}

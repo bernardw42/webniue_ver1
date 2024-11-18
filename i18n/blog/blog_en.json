@@ -1,6 +1,21 @@
 {
-  "art": {
-    "h1": "Article",
-    "h2": "Article Information"
+  "arth": {
+    "h": "Blog & Handbook",
+    "h2": "Intensive class with real world experience and projects.",
+    "h3" : "Mentored by top experts in Digital Marketing."
+  },
+  "arts": {
+    "h": "Articles",
+    "h2": "Handbook"
+  },
+  "artc":{
+    "h": "Read More",
+    "h2": "Read Article",
+    "h3": "Next Page",
+    "h4": "Go Back",
+    "h5": "Subscribe",
+    "p" : "Join the newsletter to receive the latest updates in your inbox",
+    "p2": "Your Email Adress",
+    "p3": "Increase social media engagement with NIEU's exclusive effective Hook list!"
   }
 }

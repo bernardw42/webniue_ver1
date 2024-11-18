@@ -1,6 +1,21 @@
 {
-  "art": {
-    "h1": "Artikel",
-    "h2": "Informasi Artikel"
+  "arth": {
+    "h": "Blog & Buku Panduan",
+    "h2": "Kelas intensif dengan pengalaman dan proyek dunia nyata.",
+    "h3": "Dibimbing oleh pakar terkemuka di bidang Pemasaran Digital."
+  },
+  "arts": {
+    "h": "Artikel",
+    "h2": "Buku Panduan"
+  },
+  "artc": {
+    "h": "Baca Lebih",
+    "h2": "Baca Artikel",
+    "h3": "Selanjutnya",
+    "h4": "Kembali",
+    "h5": "Langganan",
+    "p" : "Bergabung di Newsletter Kami untuk Informasi Terbaru",
+    "p2": "Alamat Email Anda",
+    "p3": "Tingkatkan engagement social media dengan daftar Hook efektif eksklusif dari NIEU!"
   }
 }

@@ -1,3 +1,5 @@
+"use client"
+import { LinkWithLocale, useTranslation } from 'next-export-i18n';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
@@ -11,7 +13,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ title, date, desc, image, className, links }) => {
-
+  const { t } = useTranslation();
   return (
     <div className={`relative flex flex-col max-w-[800px] ${className}`}>
       <div className='bg-gray-600 rounded-t-2xl drop-shadow-xl min-h-[200px] max-w-[800px] overflow-hidden'>
@@ -27,9 +29,9 @@ const Card: React.FC<CardProps> = ({ title, date, desc, image, className, links 
         </div>
         <ul className='pt-[15px] '>
           <li>
-            <Link href={links} className="inline-block bg-[#5569B2] hover:bg-[#374474] text-white font-semibold rounded-full px-3 py-2 transition duration-150 ease-in-out text-[12px]">
-              READ MORE
-            </Link>
+            <LinkWithLocale href={links} className="inline-block bg-[#5569B2] hover:bg-[#374474] text-white font-semibold rounded-full px-3 py-2 transition duration-150 ease-in-out text-[12px]">
+            {t('artc.h')}
+            </LinkWithLocale>
           </li>
         </ul>
       </div>

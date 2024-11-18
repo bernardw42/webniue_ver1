@@ -1,29 +1,18 @@
 {
   "cont": {
-    "h1": "Hubungi Kami",
-    "h2": "Kami ingin mengenal Anda lebih jauh, dan kami akan dengan senang hati menjawab pertanyaan Anda!"
+    "h1": "Hubungi Kami - Mari Kita Mulai",
+    "h2": "Kami di sini untuk membantu dan menjawab setiap pertanyaan",
+    "h3": "yang Anda miliki. Kami menantikan kabar dari Anda."
   },
-  "conss": {
-    "h1": "LOKASI KAMI",
-    "h2": "KANTOR UTAMA",
-    "h3": "CABANG"
-  },
-  "mess":{
-    "h2" : "KIRIM SEBUAH PESAN",
-    "p1" : "Nama Anda",
-    "p2" : "Email Anda",
-    "p3" : "Subjek",
-    "p4" : "Pesan Anda",
-    "p5" : "Kirim Pesan",
-    "p6" : "Nama Lengkap",
-    "p7" : "nama@email.com",
-    "p8" : "Beri tahu kami bagaimana kami dapat membantu Anda",
-    "p9" : "Tiggalkan pesan..."
-  },
-  "area":{
-    "h1":"Jawa Barat",
-    "h2":"Jawa Tengah",
-    "h3":"Jawa Timur"
+  "cons": {
+    "h1": "SAPA KAMI",
+    "h2": "Kami Senang Mendengar dari Anda. Mari Hubungi Kami.",
+    "f4": "Nama",
+    "f5": "Alamat Email",
+    "f6": "Nomor Telepon",
+    "f7": "Subjek",
+    "f8": "Pesan",
+    "f9": "Kirim Pesan",
+    "f10": "Kantor"
   }
-
 }

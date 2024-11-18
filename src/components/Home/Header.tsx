@@ -34,7 +34,7 @@ export default function Header() {
           <h1 className={`max-md:text-[25px] font-bold ${
         isMobileLandscape ? 'text-[25px]' : 'text-[40px]'}`}>{t('HomeHeader.h1')}</h1>
           <p className={`text-[40px] max-md:text-[25px] font-light ${
-        isMobileLandscape ? 'text-[40px]' : 'text-[25px]'}`}>NIUE.</p>
+        isMobileLandscape ? 'text-[40px]' : 'text-[25px]'}`}>NIEU.</p>
         </div>
       </div>
   );

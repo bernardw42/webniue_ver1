@@ -1,16 +1,35 @@
 {
-  "Serv": {
-    "h1": "Nikmati",
-    "h2": "Fitur dan Layanan Kami",
-    "h3": "yang berkontribusi dalam pertumbuhan bisnis Anda."
+  "servHeader": {
+    "h": "Mitra Desain Strategis dan",
+    "h1": "Inovasi untuk Merek Terdepan",
+    "h2": "Kami bangga menyediakan solusi pemasaran digital yang menarik."
   },
-  "ServCard": {
-      "h": "TINJAUAN BISNIS",
-      "title1": "JASA TRUK",
-      "desc1": "PBL menangani pergerakan barang dan bahan dari satu lokasi ke lokasi lain, ini termasuk mengatur pengiriman, pengangkutan truk, angkutan udara, atau transportasi kereta api berdasarkan spesifik kebutuhan klien mereka",
-      "title2": "EXPOR IMPOR",
-      "desc2": "PBL bertanggung jawab untuk menangani kepabeanan prosedur dan memastikan kepatuhan dengan peraturan impor / ekspor Kami membantu dalam menyelesaikan bea cukai, menyelesaikan yang dokumen yang diperlukan, dan membayar bea atau pajak atas nama klien kami.",
-      "title3": "DISTRIBUSI & PERGUDANGAN",
-      "desc3": "PBL menyediakan fasilitas pergudangan untuk menyimpan barang untuk sementara, mereka mengelola inventaris tingkat, mengatur ruang penyimpanan secara efisien, dan memastikan pengiriman barang tepat waktu saat dibutuhkan serta pengirimannya"
+  "ServSoc": {
+    "h": "MEDIA SOSIAL",
+    "h2": "Pelanggan berinteraksi dengan merek melalui media sosial. SMM dapat membawa kesuksesan besar bagi bisnis Anda.",
+    "p": "Kampanye Digital",
+    "p1": "Manajemen Komunitas",
+    "p2": "Penulisan Naskah",
+    "p3": "Hubungan Masyarakat",
+    "p4": "Strategi Media Sosial"
+  },
+  "ServWeb": {
+    "h": "WEBSITE",
+    "h2": "Para ahli kami berspesialisasi dalam membangun situs web atau aplikasi seluler khusus di semua perangkat untuk mendukung bisnis Anda.",
+    "p": "Desain UI & UX",
+    "p1": "Branding & Strategi Situs Web",
+    "p2": "Pengembangan Frontend",
+    "p3": "Update Berita/Blog",
+    "p4": "SEO",
+    "p5": "SEM"
+  },
+  "ServBra": {
+    "h": "BRANDING & CETAK",
+    "h2": "Pelanggan berinteraksi dengan merek melalui media sosial. SMM dapat membawa kesuksesan besar bagi bisnis Anda.",
+    "p": "Logo",
+    "p1": "Desain Grafis",
+    "p2": "Identitas Visual & Branding",
+    "p3": "Kemasan",
+    "p4": "Produk Cetak & Promosi"
   }
 }

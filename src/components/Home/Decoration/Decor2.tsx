@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import swirl from "../../../../public/home/swirl1.webp"
-import swirl2 from "../../../../public/home/swirl2.png"
 
 export default function Decor() {
     return (

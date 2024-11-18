@@ -12,7 +12,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, image, className}) => {
   return (
-    <div className={`flex flex-col justify-start items-center bg-white gap-y-[30px] max-w-[350px] max-h-[450px] rounded-lg drop-shadow-2xl px-8 py-14 ${className}`}>
+    <div className={`flex flex-col justify-start items-center bg-white gap-y-[30px] max-md:w-[290px] w-[300px] h-[400px] rounded-lg drop-shadow-2xl px-8 py-14 ${className}`}>
       <Image src={image} alt="tes" className="max-h-[180px] w-auto" />
       <div className="text-center">
         <h1 className="text-[20px] min-h-[70px] font-semibold mb-[10px] text-[#5569B2]">{title}</h1>

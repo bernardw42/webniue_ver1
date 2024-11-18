@@ -4,36 +4,42 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Transition } from 'react-transition-group';
 import Card from './ServiceCard/Card';
-import img from '../../../public/home/tes.webp';
-import img2 from '../../../public/home/tesheader.webp';
-import img3 from '../../../public/home/tes3.webp';
+import img from '../../../public/home/compress/1.webp';
+import img2 from '../../../public/home/compress/2.webp';
+import img3 from '../../../public/home/compress/3.webp';
 import Typist from 'react-typist-component';
 import Decor from './Decoration/Decor';
+import { useTranslation } from 'next-export-i18n';
 
-
-const CardData = [
-  {
-    title: 'DIGITAL CONSULTANCY',
-    desc:
-      "We've developed an approach to shaping digital strategies for our clients that result in defining prioritized cost-effective solutions that deliver a measurable Return on Investment (ROI).",
-    image: img,
-  },
-  {
-    title: 'CONVERSION RATE OPTIMIZATION',
-    desc:
-      "We've developed an asdasdasdasdasd approach to shaping digital strategies for our client that result in defining prioritized cost-effective solutions that deliver a measurable Return on Investment",
-    image: img2,
-  },
-  {
-    id: 'asdasdqwr',
-    title: 'ONLINE REPUTATION MANAGEMENT',
-    desc:
-      "We've developed an approach to shaping digital strategies for our clients that result in defining prioritized cost-effective solutions that deliver a.",
-    image: img3,
-  },
-];
 
 const Service = () => {
+    const { t } = useTranslation();
+
+    const CardData = [
+      {
+        title: t('HomeService.h'),
+        desc:
+        t('HomeService.p'),
+        image: img,
+        link: "/services"  // Linking to the Media section
+      },
+      {
+        title: t('HomeService.h1'),
+        desc:
+        t('HomeService.p1'),
+        image: img2,
+        link: "/services"  // Linking to the Social Media section
+      },
+      {
+        title: t('HomeService.h2'),
+        desc:
+        t('HomeService.p2'),
+        image: img3,
+        link: "/services"  // Linking to the Social Posts section
+      },
+    ];
+    
+
     const [cardRef, cardInView] = useInView({
       triggerOnce: true,
       rootMargin: '-50px 0px', // Adjust the root margin as needed
@@ -64,17 +70,15 @@ const Service = () => {
         </div>
         <div className="flex bg-[#F9F9F9] w-full h-full justify-between gap-y-[15px] max-lg:gap-y-[30px] items-center flex-col pt-[150px] pb-[150px] min-h-[510px]" ref={textRef}>
             <h1 className={`font-semibold text-[25px] max-md:text-[20px] max-w-6xl text-[#5569B2] px-6 transition-all duration-1000 delay-[2000ms] ${textInView ? 'opacity-100' : 'opacity-0'}`}>
-                GROW TRAFFIC & INCREASE REVENUE
+              {t('HomeCard.p')}
             </h1>
             <h2 className="font-extrabold text-[54px] max-md:text-[42px] max-w-6xl text-[#5569B2] px-6">
                 <Typist typingDelay={50} restartKey={textInView}>
-                Appear On The Front Page of Google!
+                {t('HomeCard.p1')}
                 </Typist>
             </h2>
             <p className={`font-normal text-black text-[20px] max-md:text-[16px] max-w-6xl px-4 transition-all duration-1000 delay-[2000ms] ${textInView ? 'opacity-100' : 'opacity-0'}`}>
-                We offer professional SEO services that help websites increase their
-                organic search score drastically in order to compete for the highest
-                rankings — even when it comes to highly competitive keywords.
+              {t('HomeCard.p2')}
             </p>
         </div>
       </div>

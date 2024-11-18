@@ -2,9 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
+
 import { useTranslation, LinkWithLocale, LanguageSwitcher } from 'next-export-i18n';
-import globe from '@/../public/navbar/world.png';
+import globe from '@/../public/navbar/world.webp';
 import Image from 'next/image';
 
 export default function MobileMenu() {
@@ -86,7 +86,10 @@ export default function MobileMenu() {
               <LinkWithLocale href="/blog" className="font-medium w-full text-white hover:text-gray-600 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>{t('NavBar.p3')}</LinkWithLocale>
             </li>
             <li>
-              <LinkWithLocale href="/article" className="font-medium w-full text-white hover:text-gray-600 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>{t('NavBar.p4')}</LinkWithLocale>
+              <LinkWithLocale href="/ourworks" className="font-medium w-full text-white hover:text-gray-600 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>{t('NavBar.p5')}</LinkWithLocale>
+            </li>
+            <li>
+              <LinkWithLocale href="/contactus" className="font-medium w-full text-white hover:text-gray-600 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>{t('NavBar.p4')}</LinkWithLocale>
             </li>
             <div className='flex flex-wrap items-center font-medium gap-x-2 pr-[30px]'>
               <Image src={globe} alt='lang' className='w-[30px] drop-shadow-2xl' />

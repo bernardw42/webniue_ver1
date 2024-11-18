@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import bg from "@/../public/aboutus/theme.png";
-import img from "@/../public/aboutus/seq.webp";
+import bg from "@/../public/aboutus/compress/theme.webp";
+import img from "@/../public/aboutus/compress/seq.webp";
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from "react";
+import { useTranslation } from "next-export-i18n";
 
 
 export default function Header() {
@@ -42,6 +43,8 @@ export default function Header() {
     };
   }, []);
 
+  const { t } = useTranslation();
+
   return (
       <div
         className={`relative flex items-center justify-center w-auto bg-cover bg-center bg-fixed overflow-hidden 
@@ -60,10 +63,10 @@ export default function Header() {
         {/* Text Content */}
         <div className="flex flex-col justify-center text-left max-lg:text-center max-w-[500px] max-lg:max-w-[300] gap-y-5">
           <h1 className="text-[36px] max-md:text-[30px] max-sm:text-[26px] font-bold text-white">
-            10 Years Of Proven Experience in the Creative Field
+          {t('abtHeader.h')}
           </h1>
           <p className="text-[28px] max-md:text-[22px] max-sm:text-[18px] font-light text-white">
-            With a decade worth of experience and excellent infrastructure, NIUE is your reliable partner.
+          {t('abtHeader.p')}
           </p>
         </div>
 

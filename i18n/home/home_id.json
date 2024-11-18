@@ -4,55 +4,59 @@
     },
     "NavBar": {
       "p1": "Tentang Kami",
-      "p2": "Layanan Kami",
+      "p2": "Layanan",
       "p3": "Blog",
-      "p4": "Kontak Kami"
+      "p4": "Kontak",
+      "p5": "Portofolio"
     },
     "Footer": {
-      "p1": "Tentang Kami",
-      "p2": "Layanan Kami",
-      "p3": "Harga",
-      "p4": "Blog",
-      "p5": "Kontak Kami",
-      "p6": "Jam Kerja",
-      "p7": "Senin - Jumat, 09.00 - 21.00 WIB GMT +7"
+      "f1": "Mari Berkolaborasi",
+      "f11": "MARI BEKERJA SAMA",
+      "f2": "Siap untuk Menjelajahi Potensi Pemasaran Digital Anda?",
+      "f3": "Hubungi Kami Hari ini!",
+      "f4": "Nama",
+      "f5": "Alamat Email",
+      "f6": "Nomor Telepon",
+      "f7": "Subjek",
+      "f8": "Pesan",
+      "f9": "Kirim Pesan",
+      "p" : "Konsultasi Merek, Desain Identitas, Desain Kemasan, Desain Editorial, Riset Pasar, & Media Sosial. Kami mendesain semua jenis."
     },
     "HomeHeader": {
-      "h1": "AGENSI MARKETING DIGITAL",
-      "h2": "Bersama",
-      "h3": "Bersama dengan tim yang berpengalaman dan profesional dalam logistik dan manajemen rantai pasokan, kami menawarkan solusi logistik terbaik dengan keahlian dan jaringan yang meluas di seluruh Indonesia."
+      "h1": "AGENSI PEMASARAN DIGITAL"
     },
     "HomeService": {
-      "h": "Layanan Kami",
-      "p": "Salamat datang di Panca Budi Logistindo! Solusi Logistik Terbaik untuk Anda!"
+      "h": "PEMBANGUNAN SITUS WEB",
+      "p": "Tingkatkan situs web Anda dengan keterampilan dan pengalaman spesialis UX/UI serta pengembang ahli kami. Angkat bisnis Anda ke dalam dunia digital dengan solusi web mutakhir.",
+      "h1": "MANAGEMENT SITUS WEB",
+      "p1": "Biarkan para ahli web NIEU menangani pekerjaan berat, memungkinkan Anda fokus lebih pada prospek, penjualan, dan pelanggan Anda. Kami akan mengelola pemeliharaan situs dan proyek pengembangan Anda.",
+      "h2": "MANAGEMENT MEDIA SOSIAL",
+      "p2": "Kami menggabungkan dengan ahli keterampilan digital, kreatif, dan periklanan, dengan pengalaman dan cerita yang layak dirayakan, mengangkat merek di luar sekadar 'lebih baik.'",
+      "p3": "PELAJARI LEBIH LANJUT"
     },
     "HomeCard": {
-      "title1": "Layanan Truk",
-      "desc1": "PBL menangani pergerakan barang dan material dari satu lokasi ke lokasi lainnya.",
-      "title2": "Ekspor & Impor",
-      "desc2": "PBL bertanggung jawab untuk menangani prosedur bea cukai dan memastikan kesesuaian terhadap regulasi impor/ekspor.",
-      "title3": "Pengurusan Bea Cukai & Layanan Dokumen",
-      "desc3": "Layanan impor-ekspor dan pembersihan bea cukai dari PBL terintegrasi dengan sistem operasional kami secara global."
+      "p": "MENINGKATKAN LALU LINTAS & MENINGKATKAN PENDAPATAN",
+      "p1": "Tampil di Halaman Depan Google!",
+      "p2": "Kami menawarkan layanan SEO profesional yang membantu situs web meningkatkan skor pencarian organiknya secara drastis untuk bersaing dalam peringkat tertinggi — bahkan untuk kata kunci yang sangat kompetitif."
     },
-    "HomeMap" :{
-      "h": "Kami menawarkan solusi logistik terbaik untuk meningkatkan efisiensi dalam distribusi di seluruh Indonesia."
+    "HomeMap": {
+      "h": "STRATEGI PENCARIAN LOKAL",
+      "p": "Maksimalkan kehadiran Anda di halaman hasil mesin pencari secara lokal",
+      "h1": "OPTIMISASI PENCARIAN PETA",
+      "p1": "Optimisasi Google Maps adalah bagian penting dari strategi pemasaran lokal Anda",
+      "h2": "PEMBANGUNAN Tautan & KONTEN",
+      "p2": "Pembangunan tautan adalah komponen yang sangat penting dari Optimisasi Mesin Pencari",
+      "h3": "IKLAN PENCAHAN BERBAYAR",
+      "p3": "Iklan berbayar di Google AdWords dapat membantu Anda menjangkau pelanggan baru",
+      "h4": "DESAIN SITUS WEB KUSTOM",
+      "p4": "Tim kami mengkhususkan diri dalam desain web terjangkau dan e-commerce"
     },
     "HomeMessage": {
-      "h": "Beralih ke Panca Budi Logistindo Sekarang!",
-      "p": "Panca Budi Logistindo adalah solusi manajemen logistik dan rantai pasok untuk bisnis di berbagai industri. Didukung oleh teknologi yang dapat memantau semua pengiriman dan manajemen produk secara real-time Panca Budi Logistindo menyediakan layanan end-to-end mulai dari manajemen gudang hingga manajemen distribusi dan pengiriman.",
-      "h2" : "Hubungi Kami Panca Budi Logistindo",
-      "p1" : "Nama Anda",
-      "p2" : "Email Anda",
-      "p3" : "Subjek",
-      "p4" : "Pesan Anda",
-      "p5" : "Kirim Pesan",
-      "p6" : "Nama Lengkap",
-      "p7" : "nama@email.com",
-      "p8" : "Beri tahu kami bagaimana kami dapat membantu Anda",
-      "p9" : "Tiggalkan pesan..."
-    },
-
-    "CredsClient": {
-      "h": "KLIEN KAMI"
+      "h": "OPTIMISASI MESIN PENCARI & MEDIA SOSIAL",
+      "p": "Agensi Pemasaran Digital Layanan Lengkap",
+      "h1": "STRATEGI KONTEN",
+      "h2": "PEMASARAN MEDIA SOSIAL",
+      "h3": "SEO JANGKA PANJANG ORGANIK",
+      "h4": "ANALITIK LANJUT"
     }
 }
