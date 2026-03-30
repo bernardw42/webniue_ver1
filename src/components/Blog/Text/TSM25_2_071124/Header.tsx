@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import tab from "@/../public/blog/articles/2-071124/tren-social-media-marketing-2023.webp";
 import { LinkWithLocale, useTranslation } from "next-export-i18n";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const { t } = useTranslation();
+  const router = useRouter();
 
   const [headerRef, headerInView] = useInView({
     triggerOnce: true,
@@ -25,9 +27,17 @@ export default function Header() {
   // Function to check if the device is mobile and in landscape mode
   const checkMobileLandscape = () => {
     const isLandscape = window.matchMedia('(orientation: landscape)').matches;
-    const isMobile = window.matchMedia('(max-height: 767px)').matches; // Changed to max-height
-    console.log('isLandscape:', isLandscape, 'isMobile:', isMobile); // Debugging
+    const isMobile = window.matchMedia('(max-height: 767px)').matches;
     setIsMobileLandscape(isLandscape && isMobile);
+  };
+
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      router.back();
+      return;
+    }
+
+    router.push("/blog");
   };
 
   // Add event listener on resize and orientation change
@@ -47,7 +57,7 @@ export default function Header() {
     <div className={`relative w-full flex flex-col ${isMobileLandscape ? 'h-[540px]' : 'h-[50vh]'} justify-center items-center bg-[white] overflow-hidden`}>
          <div className="w-full lg:max-w-7xl mt-[150px] flex items-center justify-start max-lg:px-[8%]">
             {/* Back Arrow and Text */}
-            <button onClick={() => window.history.back()} className="flex items-center font-bold text-[#5569B2]">
+            <button onClick={handleBack} className="flex items-center font-bold text-[#5569B2]">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 19l-7-7h14l-7 7zm0-2.17l4.59-4.59H5.41L10 16.83zm0-12.66L5.41 9.83h9.18L10 4.17z" />
                 </svg>

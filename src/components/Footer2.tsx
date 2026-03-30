@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import emailjs from "emailjs-com";  // Import Email.js
 import { useTranslation } from "next-export-i18n";
 
 export default function Footer2() {
@@ -36,9 +35,11 @@ export default function Footer2() {
   };
 
   // Form submission handler with Email.js
-  const handleFormSubmit = (e: { preventDefault: () => void; }) => {
+  const handleFormSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    
+
+    const emailjs = (await import("emailjs-com")).default;
+
     emailjs
       .send(
         "619000",   // Replace with your Email.js service ID
@@ -46,8 +47,14 @@ export default function Footer2() {
         formData,
         "_qBl6mxNjdg36oITN"        // Replace with your Email.js user ID
       )
-      .then((response) => {
-        console.log("Message sent successfully:", response.status, response.text);
+      .then(() => {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: ""
+        });
         alert("Your message has been sent!");
       })
       .catch((error) => {

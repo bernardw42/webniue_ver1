@@ -25,8 +25,7 @@ export default function Header() {
 
   const checkMobileLandscape = () => {
     const isLandscape = window.matchMedia('(orientation: landscape)').matches;
-    const isMobile = window.matchMedia('(max-height: 767px)').matches; // Changed to max-height
-    console.log('isLandscape:', isLandscape, 'isMobile:', isMobile); // Debugging
+    const isMobile = window.matchMedia('(max-height: 767px)').matches;
     setIsMobileLandscape(isLandscape && isMobile);
   };
 
@@ -51,9 +50,9 @@ export default function Header() {
         ${isMobileLandscape ? 'h-[1080px]' : 'min-h-screen'}`}
         style={{
           backgroundImage: `url(${bg.src})`,
-          backgroundSize: 'cover',      // Ensures the background image covers the container without overflow
-          backgroundPosition: 'center', // Centers the background image
-          backgroundRepeat: 'no-repeat' // Prevents background from repeating
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       >
       <div className={`max-w-7xl w-full max-lg:flex-col flex items-center justify-between px-8 transition-all duration-[1500ms]

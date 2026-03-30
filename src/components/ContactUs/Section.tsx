@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import ball2 from "@/../public/aboutus/compress/ball2.webp";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import emailjs from "emailjs-com";
 import { useTranslation } from "next-export-i18n";
 
 export default function Home() {
@@ -19,18 +18,18 @@ export default function Home() {
     }
   }, [darkWaveInView]);
 
-  const handleSubmit = (e: { preventDefault: () => void; target: any; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void; target: any; }) => {
     e.preventDefault(); // Prevent the default form submission
 
     const form = e.target; // Access the form
+    const emailjs = (await import("emailjs-com")).default;
 
     emailjs.sendForm('619000', '619000t', form, '_qBl6mxNjdg36oITN')
       .then((result) => {
-          console.log(result.text);
           alert('Message sent successfully!');
           form.reset(); // Reset form fields after submission
       }, (error) => {
-          console.log(error.text);
+          console.error(error.text);
           alert('Failed to send message, please try again.');
       });
   };

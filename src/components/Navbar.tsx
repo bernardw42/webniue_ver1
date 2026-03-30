@@ -19,9 +19,9 @@ export default function Header() {
 
   useEffect(() => {
     scrollHandler()
-    window.addEventListener('scroll', scrollHandler)
+    window.addEventListener('scroll', scrollHandler, { passive: true })
     return () => window.removeEventListener('scroll', scrollHandler)
-  }, [top])
+  }, [])
 
   return (
     <header className={`fixed w-full z-40 md:bg-opacity-100 transition duration-300 ease-in-out ${!top ? 'bg-[#5569B2] backdrop-blur-sm shadow-lg' : ''}`}>
