@@ -26,7 +26,7 @@ export default function Footer() {
                             LINKEDIN
                         </Link>
                         <p className={`font-medium text-white flex items-center`}>|</p> */}
-                        <Link href="https://www.instagram.com/official_nieu/" target="_blank" className="flex text-white font-light">
+                        <Link href="https://www.instagram.com" target="_blank" className="flex text-white font-light">
                             INSTAGRAM
                         </Link>
                         <p className={`font-medium text-white flex items-center`}>|</p>

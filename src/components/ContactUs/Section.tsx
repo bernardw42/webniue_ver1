@@ -24,14 +24,14 @@ export default function Home() {
     const form = e.target; // Access the form
     const emailjs = (await import("emailjs-com")).default;
 
-    emailjs.sendForm('619000', '619000t', form, '_qBl6mxNjdg36oITN')
-      .then((result) => {
-          alert('Message sent successfully!');
-          form.reset(); // Reset form fields after submission
-      }, (error) => {
-          console.error(error.text);
-          alert('Failed to send message, please try again.');
-      });
+    // emailjs.sendForm('619000', '619000t', form, '_qBl6mxNjdg36oITN')
+    //   .then((result) => {
+    //       alert('Message sent successfully!');
+    //       form.reset(); // Reset form fields after submission
+    //   }, (error) => {
+    //       console.error(error.text);
+    //       alert('Failed to send message, please try again.');
+    //   });
   };
 
   const { t } = useTranslation();

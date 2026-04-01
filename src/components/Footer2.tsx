@@ -40,27 +40,27 @@ export default function Footer2() {
 
     const emailjs = (await import("emailjs-com")).default;
 
-    emailjs
-      .send(
-        "619000",   // Replace with your Email.js service ID
-        "619000t",   // Replace with your Email.js template ID
-        formData,
-        "_qBl6mxNjdg36oITN"        // Replace with your Email.js user ID
-      )
-      .then(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: ""
-        });
-        alert("Your message has been sent!");
-      })
-      .catch((error) => {
-        console.error("Error sending message:", error);
-        alert("An error occurred while sending your message. Please try again.");
-      });
+    // emailjs
+    //   .send(
+    //     "619000",   // Replace with your Email.js service ID
+    //     "619000t",   // Replace with your Email.js template ID
+    //     formData,
+    //     "_qBl6mxNjdg36oITN"        // Replace with your Email.js user ID
+    //   )
+    //   .then(() => {
+    //     setFormData({
+    //       name: "",
+    //       email: "",
+    //       phone: "",
+    //       subject: "",
+    //       message: ""
+    //     });
+    //     alert("Your message has been sent!");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error sending message:", error);
+    //     alert("An error occurred while sending your message. Please try again.");
+    //   });
   };
 
   const { t } = useTranslation();
