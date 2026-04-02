@@ -1,5 +1,5 @@
 "use client";
-import bg from "@/../public/aboutus/theme.png";
+import bg from "@/../public/aboutus/compress/theme.webp";
 import { useTranslation } from "next-export-i18n";
 import { useInView } from 'react-intersection-observer';
 
@@ -12,7 +12,7 @@ export default function Header() {
   const { t } = useTranslation();
   return (
       <div
-        className="relative flex items-center justify-center h-screen w-auto bg-cover bg-center bg-fixed overflow-hidden"
+        className="relative flex min-h-[100svh] items-center justify-center w-auto overflow-hidden bg-cover bg-center bg-scroll lg:bg-fixed"
         style={{
           backgroundImage: `url(${bg.src})`,
           backgroundSize: 'cover',      // Ensures the background image covers the container without overflow

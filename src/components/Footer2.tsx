@@ -17,16 +17,21 @@ export default function Footer2() {
     message: ""
   });
   
-  const [lightWaveRef, lightWaveInView] = useInView({ triggerOnce: true, rootMargin: "0px 0px" });
-  const [darkWaveRef, darkWaveInView] = useInView({ triggerOnce: true, rootMargin: "0px 0px" });
+  const [footerRef, footerInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "0px 0px -10% 0px",
+  });
 
   useEffect(() => {
-    if (lightWaveInView) setShowLightWave(true);
-  }, [lightWaveInView]);
+    if (!footerInView) return;
 
-  useEffect(() => {
-    if (darkWaveInView) setShowDarkWave(true);
-  }, [darkWaveInView]);
+    setShowLightWave(true);
+    const timer = window.setTimeout(() => {
+      setShowDarkWave(true);
+    }, 180);
+
+    return () => window.clearTimeout(timer);
+  }, [footerInView]);
 
   // Handle form input changes
   const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
@@ -66,8 +71,8 @@ export default function Footer2() {
   const { t } = useTranslation();
 
   return (
-    <div className="relative w-full bg-white min-h-full overflow-hidden">
-      <div className={`relative flex justify-center items-center pt-[450px] pb-[150px] transition-all duration-[1500ms] delay-200 z-30 ${showDarkWave ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[15%]"}`} ref={darkWaveRef}>
+    <div className="relative w-full bg-white min-h-full overflow-hidden" ref={footerRef}>
+      <div className={`relative flex justify-center items-center pt-[450px] pb-[150px] transition-all duration-[1500ms] delay-200 z-30 ${showDarkWave ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[15%]"}`}>
         <div className="max-w-7xl w-full h-auto flex flex-col px-8 z-30">
           <div className="flex flex-col max-w-[500px]">
             <h2 className="relative text-[22px] max-md:text-[18px] font-medium text-white before:content-[''] before:absolute before:w-[260px] before:h-[1px] before:bg-white before:top-[-5px] before:left-0 after:content-[''] after:absolute after:w-[260px] after:h-[1px] after:bg-white after:bottom-[-5px] after:left-0">
@@ -143,7 +148,7 @@ export default function Footer2() {
       <div className={`bg-[#cae9f0] absolute top-0 left-0 w-full h-full pointer-events-none transition-all duration-[1000ms] ${
               showLightWave ? "opacity-100 translate-y-0" : " opacity-0 translate-y-[15%]"
             }`}
-            ref={lightWaveRef}>
+      >
         {/* Light Blue Wave */}
         <svg
           id="visual"
@@ -161,7 +166,6 @@ export default function Footer2() {
             className={`transition-all duration-[1500ms] z-0 ${
               showLightWave ? "opacity-100 translate-y-0" : " opacity-0 translate-y-[15%]"
             }`}
-            ref={lightWaveRef}
           ></path>
 
           {/* Dark Blue Wave */}
@@ -171,7 +175,6 @@ export default function Footer2() {
             className={`transition-all duration-[1500ms] translate-y-[-50px] delay-200 ${
               showDarkWave ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[20%]"
             }`}
-            ref={darkWaveRef}
           ></path>
         </svg>
       </div>
